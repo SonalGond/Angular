@@ -1,0 +1,367 @@
+{
+    "id": 1,
+    "name": "Angular Test",
+    "description": "Angular Practice Tests",
+    "questions": [
+        {
+            "id": 10,
+            "name": "Which Angular module is needed to use NgIf NgFor",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 101,
+                    "questionId": 10,
+                    "name": "BrowserModule",
+                    "isAnswer": false
+                },
+                {
+                    "id": 102,
+                    "questionId": 10,
+                    "name": "CommonModule",
+                    "isAnswer": true
+                },
+                {
+                    "id": 103,
+                    "questionId": 10,
+                    "name": "FormsModule",
+                    "isAnswer": false
+                },
+                {
+                    "id": 104,
+                    "questionId": 10,
+                    "name": "HttpClientModule",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 20,
+            "name": "How to install TypeScript transpiler",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 201,
+                    "questionId": 20,
+                    "name": "using npm",
+                    "isAnswer": false
+                },
+                {
+                    "id": 202,
+                    "questionId": 20,
+                    "name": "using Visual Studio",
+                    "isAnswer": false
+                },
+                {
+                    "id": 203,
+                    "questionId": 20,
+                    "name": "Either using Visual Studio or npm",
+                    "isAnswer": true
+                },
+                {
+                    "id": 204,
+                    "questionId": 20,
+                    "name": "None of the above",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 30,
+            "name": "What does the ngApp directive designates in the Angular application",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 301,
+                    "questionId": 30,
+                    "name": "parent element",
+                    "isAnswer": false
+                },
+                {
+                    "id": 302,
+                    "questionId": 30,
+                    "name": "child element",
+                    "isAnswer": false
+                },
+                {
+                    "id": 303,
+                    "questionId": 30,
+                    "name": "sibling element",
+                    "isAnswer": false
+                },
+                {
+                    "id": 304,
+                    "questionId": 30,
+                    "name": "None of these",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 40,
+            "name": "Which decorator is applicable for component class coded using TypeScript",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 401,
+                    "questionId": 40,
+                    "name": "@Component()",
+                    "isAnswer": true
+                },
+                {
+                    "id": 402,
+                    "questionId": 40,
+                    "name": "@component()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 403,
+                    "questionId": 40,
+                    "name": "@Component",
+                    "isAnswer": false
+                },
+                {
+                    "id": 404,
+                    "questionId": 40,
+                    "name": "@component",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 50,
+            "name": "Which of the following method is executed at first during component lifecycle",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 501,
+                    "questionId": 50,
+                    "name": "ngDoCheck",
+                    "isAnswer": false
+                },
+                {
+                    "id": 502,
+                    "questionId": 50,
+                    "name": "ngAfterContentInit",
+                    "isAnswer": false
+                },
+                {
+                    "id": 503,
+                    "questionId": 50,
+                    "name": "ngAfterContentChecked",
+                    "isAnswer": false
+                },
+                {
+                    "id": 504,
+                    "questionId": 50,
+                    "name": "ngOnInit",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 60,
+            "name": "Which of the following function performs no operations in Angular ",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 601,
+                    "questionId": 60,
+                    "name": "angular.forEach",
+                    "isAnswer": false
+                },
+                {
+                    "id": 602,
+                    "questionId": 60,
+                    "name": "angular.extend",
+                    "isAnswer": false
+                },
+                {
+                    "id": 603,
+                    "questionId": 60,
+                    "name": "angular.merge",
+                    "isAnswer": false
+                },
+                {
+                    "id": 604,
+                    "questionId": 60,
+                    "name": "None of the above",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 70,
+            "name": "What utility functions does RxJs provides",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 701,
+                    "questionId": 70,
+                    "name": "Mapping values to different types",
+                    "isAnswer": false
+                },
+                {
+                    "id": 702,
+                    "questionId": 70,
+                    "name": "Filtering streams",
+                    "isAnswer": false
+                },
+                {
+                    "id": 703,
+                    "questionId": 70,
+                    "name": "Composing multiple streams",
+                    "isAnswer": false
+                },
+                {
+                    "id": 704,
+                    "questionId": 70,
+                    "name": "All of the above",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 80,
+            "name": "Which of the following method is executed at last during component lifecycle",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 801,
+                    "questionId": 80,
+                    "name": "ngDoCheck",
+                    "isAnswer": false
+                },
+                {
+                    "id": 802,
+                    "questionId": 80,
+                    "name": "ngAfterContentInit",
+                    "isAnswer": false
+                },
+                {
+                    "id": 803,
+                    "questionId": 80,
+                    "name": "ngAfterContentChecked",
+                    "isAnswer": true
+                },
+                {
+                    "id": 804,
+                    "questionId": 80,
+                    "name": "ngOnInit",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 90,
+            "name": "Which type of forms places most of the form handling logic within the forms template",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 901,
+                    "questionId": 90,
+                    "name": "Template-Driven Forms",
+                    "isAnswer": true
+                },
+                {
+                    "id": 902,
+                    "questionId": 90,
+                    "name": "Reactive Forms",
+                    "isAnswer": false
+                },
+                {
+                    "id": 903,
+                    "questionId": 90,
+                    "name": "Display Forms",
+                    "isAnswer": false
+                },
+                {
+                    "id": 904,
+                    "questionId": 90,
+                    "name": "Permanent Forms",
+                    "isAnswer": false
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 100,
+            "name": "Select an invalid expression in Angular",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 1001,
+                    "questionId": 100,
+                    "name": "items[index]",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1002,
+                    "questionId": 100,
+                    "name": "user.name",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1003,
+                    "questionId": 100,
+                    "name": "1+2",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1004,
+                    "questionId": 100,
+                    "name": "None of these",
+                    "isAnswer": true
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        }
+    ]
+}
