@@ -9,11 +9,16 @@ import { QuizService } from '../shared/quiz.service';
 })
 export class ResultComponent implements OnInit {
 
-  constructor(public quizService: QuizService, private router: Router) { }
 
-  ngOnInit() {}
-    
-    /*  this.quizService.getAnswers().subscribe(
+  constructor(private quizService: QuizService, private router: Router) { }
+
+  ngOnInit() {
+    if (parseInt(localStorage.getItem('qnProgress')) == 10) {
+      this.quizService.seconds = parseInt(localStorage.getItem('seconds'));
+      this.quizService.qnProgress = parseInt(localStorage.getItem('qnProgress'));
+      this.quizService.qns = JSON.parse(localStorage.getItem('qns'));
+
+      this.quizService.getAnswers().subscribe(
         (data: any) => {
           this.quizService.correctAnswerCount = 0;
           this.quizService.qns.forEach((e, i) => {
@@ -22,18 +27,15 @@ export class ResultComponent implements OnInit {
             e.correct = data[i];
           });
         }
-      );*/
-    //}
-  //  else
-      //this.router.navigate(['/quiz']);
-//  }
+      );
+    }
+    else
+      this.router.navigate(['/quiz']);
+  }
 
 
-  OnSubmit() {
-    /*
-    this.quizService.submitScore().subscribe(() => {
-      this.restart();
-    });*/
+  OnSubmit() {    
+      this.restart();    
   }
 
   restart() {
