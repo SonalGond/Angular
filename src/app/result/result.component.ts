@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Question } from '../models/question';
+import { Quiz } from '../models/quiz';
 import { QuizService } from '../shared/quiz.service';
 
 @Component({
@@ -8,40 +10,32 @@ import { QuizService } from '../shared/quiz.service';
   styleUrls: ['./result.component.scss']
 })
 export class ResultComponent implements OnInit {
+  quizes: any[];
+  quiz: Quiz = new Quiz(null);
+  mode = 'quiz';
+  quizName: string;
 
-
-  constructor(private quizService: QuizService, private router: Router) { }
+  constructor(public quizService: QuizService, private router: Router) { }
 
   ngOnInit() {
-    if (parseInt(localStorage.getItem('qnProgress')) == 10) {
-      this.quizService.seconds = parseInt(localStorage.getItem('seconds'));
-      this.quizService.qnProgress = parseInt(localStorage.getItem('qnProgress'));
-      this.quizService.qns = JSON.parse(localStorage.getItem('qns'));
+    
+    let answers = [];
+    this.quiz.questions.forEach(x => answers.push({ 'quizId': this.quiz.id, 'questionId': x.id, 'answered': x.answered }));
 
-      this.quizService.getAnswers().subscribe(
-        (data: any) => {
-          this.quizService.correctAnswerCount = 0;
-          this.quizService.qns.forEach((e, i) => {
-            if (e.answer == data[i])
-              this.quizService.correctAnswerCount++;
-            e.correct = data[i];
-          });
-        }
-      );
-    }
-    else
-      this.router.navigate(['/quiz']);
+    // Post your data to the server here. answers contains the questionId and the users' answer.
+    console.log(this.quiz.questions);
+    this.mode = 'result';
   }
+  isAnswered(question: Question) {
+    return question.options.find(x => x.selected) ? 'Answered' : 'Not Answered';
+  };
 
-
+  isCorrect(question: Question) {
+    return question.options.every(x => x.selected === x.isAnswer) ? 'correct' : 'wrong';
+  };
   OnSubmit() {    
-      this.restart();    
+      //this.restart();    
   }
 
-  restart() {
-    localStorage.setItem('qnProgress', "0");
-    localStorage.setItem('qns', "");
-    localStorage.setItem('seconds', "0");
-    this.router.navigate(['/quiz']);
-  }
+ 
 }
